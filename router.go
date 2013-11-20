@@ -3,7 +3,7 @@ package revel
 import (
 	"encoding/csv"
 	"fmt"
-	"github.com/robfig/pathtree"
+	"github.com/immon/pathtree"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -22,7 +22,7 @@ type Route struct {
 	FixedParams    []string // e.g. "arg1","arg2","arg3" (CSV formatting)
 	TreePath       string   // e.g. "/GET/app/:id"
 
-	routesPath string // e.g. /Users/robfig/gocode/src/myapp/conf/routes
+	routesPath string // e.g. /Users/immon/gocode/src/myapp/conf/routes
 	line       int    // e.g. 3
 }
 

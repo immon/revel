@@ -1,7 +1,7 @@
 package revel
 
 import (
-	"github.com/robfig/config"
+	"github.com/immon/config"
 	"go/build"
 	"io"
 	"io/ioutil"
@@ -13,24 +13,24 @@ import (
 )
 
 const (
-	REVEL_IMPORT_PATH = "github.com/robfig/revel"
+	REVEL_IMPORT_PATH = "github.com/immon/revel"
 )
 
 var (
 	// App details
 	AppName    string // e.g. "sample"
-	BasePath   string // e.g. "/Users/robfig/gocode/src/corp/sample"
-	AppPath    string // e.g. "/Users/robfig/gocode/src/corp/sample/app"
-	ViewsPath  string // e.g. "/Users/robfig/gocode/src/corp/sample/app/views"
+	BasePath   string // e.g. "/Users/immon/gocode/src/corp/sample"
+	AppPath    string // e.g. "/Users/immon/gocode/src/corp/sample/app"
+	ViewsPath  string // e.g. "/Users/immon/gocode/src/corp/sample/app/views"
 	ImportPath string // e.g. "corp/sample"
-	SourcePath string // e.g. "/Users/robfig/gocode/src"
+	SourcePath string // e.g. "/Users/immon/gocode/src"
 
 	Config  *MergedConfig
 	RunMode string // Application-defined (by default, "dev" or "prod")
 	DevMode bool   // if true, RunMode is a development mode.
 
 	// Revel installation details
-	RevelPath string // e.g. "/Users/robfig/gocode/src/revel"
+	RevelPath string // e.g. "/Users/immon/gocode/src/revel"
 
 	// Where to look for templates and configuration.
 	// Ordered by priority.  (Earlier paths take precedence over later paths.)
@@ -293,7 +293,7 @@ func addModule(name, importPath, modulePath string) {
 
 	// Hack: There is presently no way for the testrunner module to add the
 	// "test" subdirectory to the CodePaths.  So this does it instead.
-	if importPath == "github.com/robfig/revel/modules/testrunner" {
+	if importPath == "github.com/immon/revel/modules/testrunner" {
 		CodePaths = append(CodePaths, path.Join(BasePath, "tests"))
 	}
 }

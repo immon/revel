@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/robfig/revel"
-	"github.com/robfig/revel/harness"
+	"github.com/immon/revel"
+	"github.com/immon/revel/harness"
 	"os"
 	"path"
 	"path/filepath"
@@ -21,7 +21,7 @@ WARNING: The target path will be completely deleted, if it already exists!
 
 For example:
 
-    revel build github.com/robfig/revel/samples/chat /tmp/chat
+    revel build github.com/immon/revel/samples/chat /tmp/chat
 `,
 }
 

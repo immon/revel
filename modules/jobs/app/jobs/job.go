@@ -1,8 +1,8 @@
 package jobs
 
 import (
-	"github.com/robfig/cron"
-	"github.com/robfig/revel"
+	"github.com/immon/cron"
+	"github.com/immon/revel"
 	"reflect"
 	"runtime/debug"
 	"sync"

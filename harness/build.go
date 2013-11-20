@@ -2,7 +2,7 @@ package harness
 
 import (
 	"fmt"
-	"github.com/robfig/revel"
+	"github.com/immon/revel"
 	"go/build"
 	"os"
 	"os/exec"
@@ -252,7 +252,7 @@ package main
 import (
 	"flag"
 	"reflect"
-	"github.com/robfig/revel"{{range $k, $v := $.ImportPaths}}
+	"github.com/immon/revel"{{range $k, $v := $.ImportPaths}}
 	{{$v}} "{{$k}}"{{end}}
 )
 
@@ -302,7 +302,7 @@ func main() {
 const ROUTES = `// GENERATED CODE - DO NOT EDIT
 package routes
 
-import "github.com/robfig/revel"
+import "github.com/immon/revel"
 
 {{range $i, $c := .Controllers}}
 type t{{.StructName}} struct {}

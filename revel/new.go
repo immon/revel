@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/robfig/revel"
+	"github.com/immon/revel"
 	"go/build"
 	"math/rand"
 	"os"

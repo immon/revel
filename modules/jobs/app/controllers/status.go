@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"github.com/robfig/cron"
-	"github.com/robfig/revel"
-	"github.com/robfig/revel/modules/jobs/app/jobs"
+	"github.com/immon/cron"
+	"github.com/immon/revel"
+	"github.com/immon/revel/modules/jobs/app/jobs"
 	"strings"
 )
 
